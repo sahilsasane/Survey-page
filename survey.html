@@ -1,0 +1,124 @@
+<html>
+ <head><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+ </head>
+   <body class="content">
+     <h1 id="title">Customer Satisfaction Survey</h1>
+      <p id="description">Your survey can help us to improve our services</p>
+     <form id="survey-form">
+    <div id="form-basic">
+      <label id="name-label" for="name" class="bold">Name</label><br>
+      <input id="name" type="text" placeholder="Enter your name" required></input><br>
+      
+      <label id="email-label" for="email" class="bold">E-mail</label><br>
+      <input id="email" type="email" placeholder="Enter your e-mail" required></input><br>
+      
+      <label id="number-label" for="age" class="bold">Age</label><br>
+      <input id="number" type="number" placeholder="Age" required min="10" max="100"></input>
+    </div>
+    <div id="form-ad">
+      <label id="dropdown" for="product" class="bold">Which best describes you?</label><br>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected vlaue>Select an option</option>
+        <option value="string">Student</option>
+        <option value="air">Teacher</option>
+      </select>
+      </div>
+    <div id="buttons">
+      <p class="bold">Would you recommend our website?</p>
+      <label>
+        <input
+        name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+        name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+        name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>  
+    <div id="check">
+      <p class="bold">Which is our best product?</p>
+      <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Stringed instruments</label
+      ><br>
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Electronic instruments</label
+      ><br>
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Classical instruments</label
+      ><br>
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Percussions</label
+      ><br>
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Recording gear</label
+        >
+    </div>
+    <div class="form-group">
+      <p class="bold">Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button" class="bold">
+        Submit
+      </button>
+    </div>
+   </form>
+   </body>
+<script href="javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</html>
